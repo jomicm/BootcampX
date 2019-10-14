@@ -5,4 +5,4 @@ SELECT SUM(as_su.duration) AS total_duration
 	JOIN cohorts
 	ON students.cohort_id=cohorts.id
 	WHERE cohorts.name='FEB12'
-GROUP BY students.cohort_id;
+GROUP BY cohorts.name;
